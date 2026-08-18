@@ -1,0 +1,32 @@
+---
+description: Project stack and coding conventions
+alwaysApply: true
+---
+
+# Project Stack
+
+- JavaScript
+- Node.js
+- Git
+- GitHub
+
+# Coding Conventions
+
+- Use clear and descriptive variable names.
+- Keep functions small and focused.
+- Write simple and readable code.
+- Use consistent formatting.
+- Avoid unnecessary dependencies.
+- Add comments only when they improve clarity.
+
+# Git Conventions
+
+Use Conventional Commits for all commit messages.
+
+Examples:
+- feat: add new feature
+- fix: correct a bug
+- docs: update documentation
+- chore: update project configuration
+- refactor: improve code structure
+- test: add tests
