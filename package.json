@@ -1,0 +1,13 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Capstone project with settings form and validation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/validation.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

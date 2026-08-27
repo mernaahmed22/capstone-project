@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="/css/settings.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="settings-card" aria-labelledby="settings-title">
+        <header class="settings-header">
+          <h1 id="settings-title">Settings</h1>
+          <p class="settings-subtitle">Update your profile and application preferences.</p>
+        </header>
+
+        <form id="settings-form" class="settings-form" novalidate>
+          <div class="form-field">
+            <label for="displayName">Display name</label>
+            <input
+              id="displayName"
+              name="displayName"
+              type="text"
+              autocomplete="name"
+              required
+              aria-describedby="displayName-error"
+            />
+            <p id="displayName-error" class="field-error" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            />
+            <p id="email-error" class="field-error" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="theme">Theme</label>
+            <select id="theme" name="theme" aria-describedby="theme-error">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+            <p id="theme-error" class="field-error" role="alert"></p>
+          </div>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          <div class="form-actions">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">Save settings</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/js/validation.js"></script>
+    <script src="/js/settings-form.js"></script>
+  </body>
+</html>
