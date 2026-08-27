@@ -30,3 +30,11 @@ Examples:
 - chore: update project configuration
 - refactor: improve code structure
 - test: add tests
+
+# Form Development Rules
+
+- Every form input must have an explicitly associated label and a clear validation error message.
+- Settings forms must validate required fields and allowed values before submission.
+- New form validation behavior must include automated tests for both valid and invalid input.
+- Run automated tests and JavaScript syntax checks before committing form-related changes.
+- Do not add form fields, validation rules, or external dependencies that are not required by the feature specification.
